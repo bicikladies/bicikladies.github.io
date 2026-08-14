@@ -73,9 +73,16 @@ img {
 }
 
 .lang-switch a {
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  border-radius: 999px;
   text-decoration: none;
   color: var(--accent);
   font-weight: 500;
+}
+
+.lang-switch a[aria-current="page"] {
+  border-color: var(--accent);
 }
 
 .lang-switch a:hover {
@@ -130,6 +137,13 @@ img {
 
 .social-bar a:hover {
   color: var(--accent);
+  border-color: var(--accent);
+}
+
+.social-bar a.event-link,
+.social-bar a.event-link:hover {
+  background: var(--accent);
+  color: #fff;
   border-color: var(--accent);
 }
 
