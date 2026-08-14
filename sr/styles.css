@@ -62,8 +62,31 @@ img {
 
 .top-bar {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
   margin-bottom: 12px;
+}
+
+.site-logo-link {
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  height: 68px;
+  border: 1px solid rgba(242, 80, 142, 0.45);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.site-logo-link:hover {
+  transform: translateY(-2px);
+}
+
+.site-logo {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .lang-switch {
@@ -287,6 +310,16 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .top-bar {
+    min-height: 56px;
+  }
+
+  .site-logo-link,
+  .site-logo {
+    width: 56px;
+    height: 56px;
+  }
+
   .site-shell {
     padding: 18px 12px 32px;
   }
