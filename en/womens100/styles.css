@@ -76,6 +76,29 @@
   align-items: start;
 }
 
+.stacked-details {
+  grid-template-columns: 1fr;
+}
+
+.timing-list {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1.2rem;
+}
+
+.timing-list p {
+  margin: 0;
+}
+
+.travel-options {
+  margin: 0.65rem 0 1rem;
+  padding-left: 1.35rem;
+}
+
+.travel-options li + li {
+  margin-top: 0.45rem;
+}
+
 .route-card h3 {
   margin: 0 0 10px;
   font-size: 1.18rem;
